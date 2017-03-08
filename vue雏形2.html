@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/vue.js"></script>
+    <title>常见指令</title>
+</head>
+<body>
+    <div id="box">
+        <input type="text" value="aaa" v-model ="msg">
+        <input type="text" value="aaa" v-model ="msg">
+        <br>
+        {{msg}}
+        <br>
+        {{msg2}}
+        <br>
+        {{msg3}}
+        <br>
+        {{arr}}
+        <br>
+        {{json}}
+    </div>
+    <script>
+        /*
+        * 1. 指令：扩展html标签的功能和属性。
+        *   v-model   一般表单元素   双向数据绑定
+        * */
+        var c =new Vue({
+            el :  '#box',
+            data : {
+                msg:'welcome vue',
+                msg2: 12,
+                msg3: true,
+                arr:[1,2,3,4],
+                json:{  a: 'apple', b: 'pear',c: 'orange' }
+            }
+        });
+    </script>
+</body>
+</html>

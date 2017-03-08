@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/vue.js"></script>
+    <title>循环</title>
+    <style>
+        .cube{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <input type="text" v-model="msg">   双向改变
+    </div>
+    <script>
+        var c =new  Vue({
+            el : '#box',
+            data : {
+                msg : "hcc"
+            }
+        })
+    </script>
+</body>
+</html>
